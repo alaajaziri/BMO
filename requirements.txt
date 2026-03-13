@@ -3,5 +3,5 @@ flask-cors==4.0.1
 requests==2.32.3
 numpy==1.26.4
 soundfile==0.12.1
-rvc-python==0.1.8
+rvc-python==0.1.5
 gunicorn==22.0.0
