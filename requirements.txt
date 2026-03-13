@@ -5,8 +5,8 @@ numpy==1.26.4
 soundfile==0.12.1
 faiss-cpu==1.13.0
 gunicorn==22.0.0
-torch==2.2.2
-torchaudio==2.2.2
+torch==2.9.1
+torchaudio==2.9.1
 praat-parselmouth==0.4.3
 pyworld==0.3.4
 librosa==0.10.2
