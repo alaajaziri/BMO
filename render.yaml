@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: bmo-voice-server
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app --timeout 60
+    envVars:
+      - key: ELEVENLABS_API_KEY
+        sync: false          # you set this manually in Render dashboard
+      - key: ELEVENLABS_VOICE_ID
+        value: FGY2WhTYpPnrIDTdsKH5
+      - key: RVC_MODEL_PATH
+        value: models/BMO.pth
+      - key: RVC_INDEX_PATH
+        value: models/BMO.index
